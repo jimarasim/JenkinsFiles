@@ -1,6 +1,6 @@
 FROM jenkins
 MAINTAINER James Arasim <jaemzware@hotmail.com>
-
+EXPOSE 3000
 # https://docs.docker.com/engine/articles/dockerfile_best-practices/
 # if we want to install via apt
 USER root
