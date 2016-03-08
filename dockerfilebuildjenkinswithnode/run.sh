@@ -1,0 +1,1 @@
+docker run -p 8080:8080 -p 3000:3000 -p 5900:5900 -v /Users/jameskarasim/Downloads/installed/repositories/dockerjenkins:/var/jenkins_home --name jenkinsfirefox -d jimarasim/jenkins:firefox20160308
