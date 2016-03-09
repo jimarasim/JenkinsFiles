@@ -64,11 +64,16 @@ printf '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 #   ATTEMPT 4: /usr/bin/x11vnc -create -rfbauth $HOME/.vnc/passwd
 #   ATTEMPT 5: /usr/bin/x11vnc -create -localhost -rfbauth $HOME/.vnc/passwd
 #   ATTEMPT 6: /usr/bin/x11vnc -create -localhost -rfbauth $HOME/.vnc/passwd -display :$DISPLAY_NUMBER
+#   ATTEMPT 7: /usr/bin/x11vnc -create -rfbauth $HOME/.vnc/passwd -display :$DISPLAY_NUMBER
+#   ATTEMPT 8: /usr/bin/x11vnc -create -rfbauth $HOME/.vnc/passwd -auth guess -display :$DISPLAY_NUMBER
+#   xauth:  error in locking authority file /var/jenkins_home/jobs/Board/workspace/.Xauthority-6843948237589359171 <== try deleting this because there is no non-root user
+#   Unable to connect to host 127.0.0.1 on port 7055 after 45000 <===try updating selenium
+
 RUN mkdir ~/.vnc
 #   Setup a password
 RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
 #   Ports for VNC
-#   THOUGHT: NEED TO EXPOSE ANY VNC PORTS I WANT TO USE THROUGH DOCKER BUILD FILE. RIGHT NOW THERES ONLY 5900, SO SET MIN AND MAX DISPLAY NUMBER (INCLUSIVE) TO 00
+#   ATTEMPT 6 THOUGHT: NEED TO EXPOSE ANY VNC PORTS I WANT TO USE THROUGH DOCKER BUILD FILE. RIGHT NOW THERES ONLY 5900, SO SET MIN AND MAX DISPLAY NUMBER (INCLUSIVE) TO 00
 EXPOSE 5900
 EXPOSE 5901
 EXPOSE 5902
