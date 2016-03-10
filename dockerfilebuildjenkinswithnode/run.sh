@@ -7,5 +7,5 @@
 #   4444 - selenium grid
 # v - map host directory to volume container directory
 # name - name of the container
-docker run -d -p 50000:50000 -p 8080:8080 -p 3000:3000 -p 4444:4444 -v /Users/jameskarasim/Downloads/installed/repositories/dockerjenkins:/var/jenkins_home --name jenkinsfirefox jimarasim/jenkins:nodeandgrid
+docker run -d -p 50000:50000 -p 8080:8080 -p 3000:3000 -p 4444:4444 -v /Users/jameskarasim/Downloads/installed/repositories/dockerjenkins:/var/jenkins_home --name jenkinsnodeandgrid jimarasim/jenkins:nodeandgrid
 
