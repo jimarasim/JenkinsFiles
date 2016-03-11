@@ -3,19 +3,18 @@
 #   NOTE: There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the lastCMD will take effect.
 FROM jenkins:latest
 MAINTAINER James Arasim <jaemzware@hotmail.com>
-
 #########################################
 #   EXPOSE PORTS
+#   50000 exposed by jenkins:latest image
+#   8080 exposed by jenkins:latest image
 #   Port for StuffedAnimalWar
 EXPOSE 3000
 #   Port for Selenium Grid Hub
 EXPOSE 4444
 #########################################
-
 #   https://docs.docker.com/engine/articles/dockerfile_best-practices/
 #   if we want to install via apt
 USER root
-
 RUN apt-get update && apt-get install -y \
     aufs-tools \
     automake \
@@ -28,7 +27,6 @@ RUN apt-get update && apt-get install -y \
     reprepro \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
-
 #########################################
 #   INSTALL NODE.JS
 #   https://github.com/dockerfile/nodejs/blob/master/Dockerfile
