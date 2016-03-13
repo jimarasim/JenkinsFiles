@@ -11,6 +11,9 @@ MAINTAINER James Arasim <jaemzware@hotmail.com>
 EXPOSE 3000
 #   Port for Selenium Grid Hub
 EXPOSE 4444
+#   
+EXPOSE 587
+EXPOSE 465
 #########################################
 #   https://docs.docker.com/engine/articles/dockerfile_best-practices/
 #   if we want to install via apt
