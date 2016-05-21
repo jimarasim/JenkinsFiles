@@ -6,14 +6,19 @@ MAINTAINER James Arasim <jaemzware@hotmail.com>
 #########################################
 #   EXPOSE PORTS
 #   50000 exposed by jenkins:latest image
+# 	TCP port for JNLP slave agents
+EXPOSE 50000
+
 #   8080 exposed by jenkins:latest image
-#   Port for StuffedAnimalWar
-EXPOSE 3000
+EXPOSE 8080
+
 #   Port for Selenium Grid Hub
 EXPOSE 4444
-#   
+
+#snmp
 EXPOSE 587
 EXPOSE 465
+
 #########################################
 #   https://docs.docker.com/engine/articles/dockerfile_best-practices/
 #   if we want to install via apt
