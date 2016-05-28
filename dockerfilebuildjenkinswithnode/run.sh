@@ -7,6 +7,6 @@
 #   4444 - selenium grid
 # v - map host directory to volume container directory
 # name - name of the container
-docker run -d -p 50000:50000 -p 8080:8080 -p 4444:4444 -p 465:465 -p 587:587 -v /Users/jameskarasim/Downloads/installed/dockerjenkins_volatile/exposessnmp:/var/jenkins_home --name 20160512 jimarasim/jenkins:20160512
+docker run -d -p 50000:50000 -p 8080:8080 -p 4444:4444 -v /Users/jameskarasim/Downloads/installed/dockerjenkins_volatile:/var/jenkins_home --name 20160512 jimarasim/jenkins:20160520
 
 
