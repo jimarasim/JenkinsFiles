@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body, table, form, input, td, th, p, textarea, select {
+  font-family: Verdana,Arial, Helvetica, sans-serif;
+}
+
+#jenkins-head-icon{
+content:url(images/BPT.png);
+}
+
+#jenkins-name-icon{
+content:url(images/BPTtitle.png);
+}
+
+img.icon-blue.icon-lg{
+    content:url(images/BPTfox.jpeg);
+}
+
+body, table, form, input, td, th, p, textarea, select {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: bolder;
+color: #333;
+}
+
+
+/*table,td{text-align:left;vertical-align:top;border: 1px solid black;}*/
+table{text-align:left;vertical-align:top;}
+td{text-align:left;vertical-align:top;border: 1px solid black;}
