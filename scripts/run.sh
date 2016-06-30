@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # run - run an image container
 # d - run as daemon
 # p - map hostport to container port
