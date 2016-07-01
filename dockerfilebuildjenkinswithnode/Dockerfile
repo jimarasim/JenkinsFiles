@@ -19,6 +19,14 @@ EXPOSE 4444
 EXPOSE 587
 EXPOSE 465
 
+#stuffedanimalwar
+EXPOSE 3000
+EXPOSE 3001
+EXPOSE 3002
+EXPOSE 3003
+EXPOSE 3004
+EXPOSE 3005
+
 #########################################
 #   https://docs.docker.com/engine/articles/dockerfile_best-practices/
 #   if we want to install via apt
