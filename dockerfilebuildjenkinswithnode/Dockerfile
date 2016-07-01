@@ -11,6 +11,7 @@ EXPOSE 50000
 
 #   8080 exposed by jenkins:latest image
 EXPOSE 8080
+EXPOSE 8082
 
 #   Port for Selenium Grid Hub
 EXPOSE 4444
