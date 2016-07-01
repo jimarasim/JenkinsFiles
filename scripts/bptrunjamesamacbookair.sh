@@ -6,6 +6,6 @@
 #   4444 - selenium grid
 # v - map host directory to volume container directory
 # name - name of the container
-docker run -d -p 50000:50000 -p 8082:8080 -p 4444:4444 -v /Users/jamesa/Downloads/installed/repositories/dockerjenkins_volatile.bitbucket.brownpapertickets:/var/jenkins_home --name BPTDockerJenkinsContainer jenkins:latest
+docker run -d -p 50000:50000 -p 8082:8080 -p 4444:4444 -v /Users/jamesa/Downloads/installed/repositories/dockerjenkins_volatile.bitbucket.brownpapertickets:/var/jenkins_home --name BPTDockerJenkinsContainer20160701 jenkins:latest
 
 
