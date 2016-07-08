@@ -1,4 +1,12 @@
-lsof -n -i:4444 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
-lsof -n -i:5561 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5550 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5551 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5552 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
 lsof -n -i:5553 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
 lsof -n -i:5554 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5555 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5556 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5557 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5558 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5559 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5560 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
+lsof -n -i:5561 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9
