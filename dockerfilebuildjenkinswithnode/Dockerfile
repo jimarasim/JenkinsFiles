@@ -8,18 +8,30 @@ MAINTAINER James Arasim <jaemzware@hotmail.com>
 #   50000 exposed by jenkins:latest image
 # 	TCP port for JNLP slave agents
 EXPOSE 50000
-
 #   8080 exposed by jenkins:latest image
 EXPOSE 8080
-EXPOSE 8082
-
-#   Port for Selenium Grid Hub
+#   Ports for Selenium Grid Hub
 EXPOSE 4444
+#   Ports for Selenium Grid Nodes
+EXPOSE 5550
+EXPOSE 5551
+EXPOSE 5552
+#FIREFOXMAC
+EXPOSE 5553
+#SAFARI
+EXPOSE 5554
+EXPOSE 5555
+EXPOSE 5556
+EXPOSE 5557
+EXPOSE 5558
+EXPOSE 5559
+EXPOSE 5560
+#CHROMEMAC
+EXPOSE 5561
 
 #snmp
 EXPOSE 587
 EXPOSE 465
-
 #########################################
 #   https://docs.docker.com/engine/articles/dockerfile_best-practices/
 #   if we want to install via apt
